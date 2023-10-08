@@ -9,6 +9,7 @@ const userSchema = mongoose.Schema({
     "endDate": [Date],
     "id": string,
     "credit": 0,
+    "password": String,
     "description": String,
     "products": {
         type:[product],

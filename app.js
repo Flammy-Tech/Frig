@@ -21,14 +21,16 @@ app.use(express.static('public'));
 const productsRouter = require('./routes/products');
 const cartRouter = require('./routes/cart');
 const shopRouter = require('./routes/shop');
+const signupRouter = require('./routes/signup');
 
 // Pass the database instance to the route handlers
 app.use('/products', productsRouter);
 app.use('/cart', cartRouter);
 app.use('/shop', shopRouter);
+app.use('/signup', signupRouter);
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the Online Shop!');
+  res.render('home');
 });
 
 app.listen(port, () => {

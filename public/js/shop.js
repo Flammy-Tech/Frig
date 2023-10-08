@@ -65,15 +65,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // // Event listener for the search input
-    // searchInput.addEventListener('input', () => {
-    //     performSearch();
-    // });
 
-    // // Event listener for the search button (optional)
-    // searchButton.addEventListener('click', () => {
-    //     performSearch();
-    // });
+    // Mobile Mode NavBar
+    // Get references to the navigation elements
+const mainNav = document.getElementById('mainNav');
+const toggleNavButton = document.getElementById('brand-logo');
+
+// Add a click event listener to the toggle button
+toggleNavButton.addEventListener('click', () => {
+    // Check the current display style of the navigation menu
+    const currentDisplayStyle = mainNav.style.display;
+
+    // Toggle the display style
+    if (currentDisplayStyle === 'none' || currentDisplayStyle === '') {
+        mainNav.style.display = 'block';
+    } else {
+        mainNav.style.display = 'none';
+    }
+});
+
+
    
 });
 
