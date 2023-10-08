@@ -11,7 +11,7 @@ const dbName = 'frig';
 // Connect to the MongoDB database
 const client = new MongoClient(url);
 
-router.get('/', (req, res) => {
+router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
@@ -48,12 +48,13 @@ router.post('/signup', async (req, res) => {
         await users.insertOne(newUser);
 
         // Respond with sign-up page
-        res.render('shop');
     } catch (error) {
         console.error('Error:', error);
         res.status(500).json({ error: 'Internal Server Error' });
     } finally {
         await client.close();
+        res.render('shop');
+
     }
 });
 

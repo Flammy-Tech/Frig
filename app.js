@@ -27,7 +27,7 @@ const signupRouter = require('./routes/signup');
 app.use('/products', productsRouter);
 app.use('/cart', cartRouter);
 app.use('/shop', shopRouter);
-app.use('/signup', signupRouter);
+app.use('/', signupRouter);
 
 app.get('/', (req, res) => {
   res.render('home');
