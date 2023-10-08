@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+<body>
+    <h1>Add a New Product</h1>
+
+    <form action="/products/add" method="POST">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required><br>
+
+        <label for="productType">Product Type:</label>
+        <input type="text" id="productType" name="productType" required><br>
+        
+        <label for="recommendation">Recommendation:</label>
+        <input type="text" id="recommendation" name="recommendation" required><br>
+
+        <label for="currentTag">Current Tag:</label>
+        <input type="text" id="currentTag" name="currentTag" required><br>
+
+        <!-- Add other input fields for additional product data as needed -->
+
+        <button type="submit">Add Product</button>
+    </form>
+</body>
+</html>
