@@ -13,10 +13,12 @@ body, h1, h2, p, ul, li, a{
     padding: 0;
     list-style: none;
     text-decoration: none;
+
 }
 
 body {
-    background-color: #f7f7f7;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../assets/Shopping-cart.jpg') no-repeat fixed;
+    background-size: cover;
 }
 
 .nav-con{
@@ -304,12 +306,6 @@ button#checkout:hover {
 .hidden {
     display: none;
 }
-
-
-
-
-
-
 
 
 

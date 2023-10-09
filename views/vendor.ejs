@@ -4,50 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/vendor.css">
+    <script src="./js/vendor.js" defer></script>
     <title>Vendor Center</title>
 </head>
 <body>
     <div class="nav-con">
         <header>
-            <h1 id="brand-logo">🔥Microserve</h1>
-            <div class="search">
-                <input type="text" id="search" placeholder="Search...">
-                <button id="searchButton">Search</button>
-            </div>
-            
-            <div id="cart">
-                <span id="cart-count">0</span>
-                <button id="view-cart"> <i class="fas fa-bag-shopping"></i> </button>
-            </div>
-        </header>
-    
-    
-        <nav id="mainNav">
-            <ul>
+            <h1 id="brand-logo" style="cursor: pointer;">🔥Microserve</h1>
+            <ul class="nav-list">
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Add Products</a></li>
            
             </ul>
-    
-    
-        </nav>
-    
+            
+        </header>
+
     </div>
     
-    <div class="login-container">
-        <div class="focus-img">
-            <h2 class="focus-title">Seller Center</h2>
-            <img src="./assets/vendor.jpg" alt="vendor holding credit card" />
+    <div class="focus">
+        <div class="login-container">
+            <div class="focus-img">
+                <h2 class="focus-title">Seller Center</h2>
+                <img src="./assets/vendor.jpg" alt="vendor holding credit card" />
+            </div>
+            
+            <div class="focus-form">
+                <form class="login-form">
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="password" required />
+                    <input type="submit" value="Login" />
+                </form>
+                
+            </div>
         </div>
 
-        <div class="focus-form">
-            <form class="login-form">
-                <input type="email" placeholder="Email" required />
-                <input type="password" placeholder="password" required />
-                <input type="submit" value="Login" />
-            </form>
-
-        </div>
     </div>
 </body>
 </html>

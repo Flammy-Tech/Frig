@@ -71,32 +71,6 @@
             <!-- Render search results here -->
         </div>
         
-        <section class="product">
-            <img src="./assets/banner-1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>$10.99</p>
-            <button class="add-to-cart" data-price="10.99">Add to Cart</button>
-        </section>
-        <section class="product">
-            <img src="./assets/banner-1.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>$19.99</p>
-            <button class="add-to-cart" data-price="19.99">Add to Cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./assets/banner-1.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>$19.99</p>
-            <button class="add-to-cart" data-price="19.99">Add to Cart</button>
-        </section>
-
-        <section class="product">
-            <img src="./assets/banner-1.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>$19.99</p>
-            <button class="add-to-cart" data-price="19.99">Add to Cart</button>
-        </section>
 
         <!-- products here -->
         <% for (let i = 0; i < products.length; i++) { %>
@@ -104,7 +78,7 @@
             <section class="product">
                 <img src="./assets/banner-1.jpg" alt="Product 2">
                 <h2><%= products[i].productName %></h2>
-                <p>$19.99</p>
+                <p><%= products[i].currentTag %></p>
                 <button class="add-to-cart" data-price="19.99">Add to Cart</button>
             </section>
             <% } %>
