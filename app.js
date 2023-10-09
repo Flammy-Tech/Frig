@@ -22,12 +22,14 @@ const productsRouter = require('./routes/products');
 const cartRouter = require('./routes/cart');
 const shopRouter = require('./routes/shop');
 const signupRouter = require('./routes/signup');
+const vendorRouter = require('./routes/vendor');
 
 // Pass the database instance to the route handlers
 app.use('/products', productsRouter);
 app.use('/cart', cartRouter);
 app.use('/shop', shopRouter);
 app.use('/', signupRouter);
+app.use('/vendor', vendorRouter);
 
 app.get('/', (req, res) => {
   res.render('home');
