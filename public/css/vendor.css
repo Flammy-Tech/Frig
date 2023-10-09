@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    display: flex;
+    padding: 4rem;
+}
+
+.focus-img{
+    display: flex;
+    flex-direction: column;
+    padding:4rem;
+}
+
+.focus-img img{
+    height: 4rem;
+}
+
+.focus-form {
+    text-align: center;
+    display: flex;
+
+
+}
+.focus-form form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+}
+
+
+

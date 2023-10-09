@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.route('/')
     .get((req, res) =>{
-        res.render('product');
+        res.render('vendor');
     }).post(async(req,res) =>{
 
     }).patch(async(req,res) =>{
