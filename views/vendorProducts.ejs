@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page with Nav</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+        *{
+            font-family: Roboto, arial, helvetica, sans-serif;
+        }
+
+
+        body {
+            height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../assets/Shopping-cart.jpg') no-repeat fixed;
+            background-size: cover;
+        }
+
+        ul, h1, h2, p, ul, li, a{
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        a{
+            padding: 0.5rem;
+            color: #fff;
+        }
+
+        a:hover{
+            color: #e74c3c;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-remove{
+            background-color: #7a5e0c;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin: 0.5rem;
+        }
+
+        .btn-add{
+            background-color: #041c05;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin: 0.5rem;
+        }
+
+        .btns:hover{
+            background-color: #333;
+            color: #ff9800;
+            border: #333 solid transparent;
+        }
+
+
+        /* Mobile Views */
+
+        @media (max-width: 768px) {
+            main{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="nav-con">
+        <nav>
+            <h1 id="brand-logo">🔥Microserve</h1>
+            
+        </nav>
+
+        <main>
+            <div class="btn-section">
+                <a  href="/products/add"> <button type="button" class="btn-add btns">Add Products</button> </a>
+                <button type="button" class="btn-remove btns">Remove Products</button>
+            </div>
+
+            <div class="products">
+                <label for="product-table">Products</label>
+                <table class="product-table">
+                    <thead>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Price</th>
+
+                    </thead>
+
+                    <tbody>
+                              <!-- Add table data rows here -->
+                        <% for (let i = 0; i < products.length; i++) { %>
+                            <tr>
+                                <td><%= products[i].productId %></td>
+                                <td><%= products[i].productName %></td>
+                                <td><%= products[i].productDescription %></td>
+                                <td><%= products[i].productType %></td>
+                                <td><%= products[i].currentTag %></td>
+                     
+                            </tr>
+                            <% } %>
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

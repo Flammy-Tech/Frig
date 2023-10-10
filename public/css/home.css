@@ -73,7 +73,7 @@
             background-image: url('hero-image.jpg');
             background-size: cover;
             text-align: center;
-            padding: 5rem 0;
+            padding: 1rem 0;
             color: #fff;
         }
 
@@ -109,7 +109,9 @@
             display: flex;
             background-size: cover;
             text-align: center;
-            padding: 2rem 9rem;
+            justify-content: center;
+
+            padding: 0 9rem;
             color: #fff;
         }
 
@@ -118,11 +120,11 @@
         }
 
         .feature img {
-            max-width: 15rem;
+            max-width: 10rem;
         }
 
         .feature img:hover{
-            max-width: 20rem;
+            max-width: 15rem;
             animation: showcase 0.5s ease-in-out;
         }
 
@@ -132,18 +134,18 @@
 
         @keyframes showcase-out {
             from {
-                max-width: 20rem;
+                max-width:15rem;
             }
             to {
-                max-width: 15rem;
+                max-width: 10rem;
             }
         }
 
         @keyframes showcase {
             from{
-                max-width: 15rem;
+                max-width: 10rem;
             }to{
-                max-width: 20rem;
+               max-width: 15rem;
             }
         }
 

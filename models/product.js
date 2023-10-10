@@ -1,3 +1,4 @@
+const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
 
 const productSchema = mongoose.Schema({
@@ -5,7 +6,7 @@ const productSchema = mongoose.Schema({
     "storeLocation": String,
     "Contact": Number,
     "OriginalLocation": String,
-    "productId": Number,
+    "productId": ObjectId,
     "productName":String,
     "productDescription":String,
     "productType":String,

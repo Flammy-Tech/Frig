@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page with Nav</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+        *{
+            font-family: Roboto, arial, helvetica, sans-serif;
+        }
+
+
+        body {
+            height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../assets/Shopping-cart.jpg') no-repeat fixed;
+            background-size: cover;
+        }
+
+        ul, h1, h2, p, ul, li, a{
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        a{
+            padding: 0.5rem;
+            color: #fff;
+        }
+
+        a:hover{
+            color: #e74c3c;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="nav-con">
+        <nav>
+            <h1 id="brand-logo">🔥Microserve</h1>
+
+         <% for( let index = 0; index < products.length; index++ ) { %>
+            <%= products[index].storeName %>
+         <% } %>
+
+            
+        </nav>
+
+    </div>
+
+</body>
+</html>
