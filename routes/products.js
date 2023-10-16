@@ -32,7 +32,7 @@ router.route('/add')
 
             console.log(`Added product with _id: ${result.insertedId}`);
 
-            res.redirect('/products'); // Redirect to the product listing page
+            res.redirect('/vendorProducts'); // Redirect to the product listing page
         } catch (error) {
             console.error('Error:', error);
             res.status(500).send('Internal Server Error'); // Handle errors gracefully

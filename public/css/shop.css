@@ -201,7 +201,7 @@ main {
 .product {
     background-color: white;
     border-radius: 0.5rem;
-    width: fit-content;
+    width: 10rem;
     margin: 0.2rem;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -210,8 +210,8 @@ main {
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 5rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     transition: transform 0.3s ease;
@@ -224,7 +224,7 @@ main {
 
 .product h2 {
     margin: 0.5rem 0;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .product p {
@@ -372,6 +372,8 @@ button#checkout:hover {
 
     .product img {
         border-radius: 0;
+        height: fit-content;
+        width: auto;
     }
 
     .product h2, .product p, .add-to-cart {
