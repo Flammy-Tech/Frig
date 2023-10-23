@@ -30,7 +30,7 @@ router.route('/')
         res.render('vendor', { products});
 
     }).post(async(req,res) =>{
-
+        res.redirect('/vendorproducts');
 
     }).patch(async(req,res) =>{
 
